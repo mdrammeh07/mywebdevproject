@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Goals</title>
+    <link rel="stylesheet" href="Master.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        h1,
+        h3,
+        h4 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul style="list-style: none; display: flex; gap: 15px;">
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="cover_letter.html">Cover Letter</a></li>
+            <li><a href="career_goals.html">Career Goals</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="sectionHeader">Muhammed Drammeh - Career Goals</h1>
+        <hr>
+        <p>Aspiring cybersecurity analyst and software-driven professional eager to explore various domains of cyber
+            intelligence. Committed to continuous learning and innovation in tech.</p>
+    </header>
+    <main>
+        <section>
+            <h4 class="sectionHeader">Short-Term Career Goals</h4>
+            <ul>
+                <li>Secure an internship at companies like Amazon, Lockheed Martin, or Boeing.</li>
+                <li>Obtain CompTIA Security+ and CISSP certifications.</li>
+                <li>Build strong technical and soft skills for corporate tech roles.</li>
+                <li>Complete my Bachelor's degree and begin pursuing a Master’s.</li>
+                <li>Gain experience through government contractors such as Northrop Grumman or GDIT.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4 class="sectionHeader">Long-Term Career Goals</h4>
+            <ul>
+                <li>Secure a full-time role as a Software Engineer or Cybersecurity Analyst.</li>
+                <li>Advance into leadership as a team lead or senior engineer.</li>
+                <li>Master programming and become a subject matter expert in cybersecurity.</li>
+                <li>Reach executive leadership positions such as CIO or CISO.</li>
+                <li>Found a tech company focused on innovation and digital safety.</li>
+                <li>Build and maintain professional-grade websites and security tools.</li>
+                <li><span style="background-color: aquamarine;">Mentor aspiring professionals entering the tech
+                        field.</span></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3 class="sectionHeader">Forms</h3>
+
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post" enctype="multipart/form-data">
+                <div class="form container">
+                    <!-- Left side -->
+                    <div class="form column">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName">
+
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName">
+
+                        <label for="myEmail">Email Address:</label>
+                        <input type="email" name="myEmail" id="myEmail">
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="123-456-7890" required>
+                        <small>Format: 123-456-7890</small>
+
+                        <label for="myPW">Password:</label>
+                        <input type="password" name="myPW" id="myPW">
+
+                        <label for="birthDate">Birth Date:</label>
+                        <input type="date" name="birthDate" id="birthDate">
+
+                        <fieldset>
+                            <legend>Best Contact Time</legend>
+                            <input type="radio" name="contactTime" id="contactTimeAny" value="any" checked>
+                            <label for="contactTimeAny">Anytime</label><br>
+
+                            <input type="radio" name="contactTime" id="contactTimeAM" value="am">
+                            <label for="contactTimeAM">AM</label><br>
+
+                            <input type="radio" name="contactTime" id="contactTimePM" value="pm">
+                            <label for="contactTimePM">PM</label><br>
+
+                            <input type="radio" name="contactTime" id="contactTimeSpecific" value="specific">
+                            <label for="contactTimeSpecific">Specific</label><br>
+
+                            <input type="time" name="myContactTime" id="myContactTime">
+                        </fieldset>
+                    </div>
+
+                    <!-- Right side -->
+                    <div class="form column">
+                        <fieldset>
+                            <legend>Checkboxes</legend>
+                            <input type="checkbox" name="demoCheckbox" id="demoCB1" value="1">
+                            <label for="demoCB1">One</label><br>
+
+                            <input type="checkbox" name="demoCheckbox" id="demoCB2" value="2">
+                            <label for="demoCB2">Two</label><br>
+
+                            <input type="checkbox" name="demoCheckbox" id="demoCB3" value="3">
+                            <label for="demoCB3">Three</label><br>
+                        </fieldset>
+
+                        <label for="mySelect">Choose Options:</label>
+                        <select name="mySelect" id="mySelect" multiple size="7">
+                            <option value="1">Test1</option>
+                            <option value="2">Test2</option>
+                            <option value="3">Test3</option>
+                            <option value="4">Test4</option>
+                            <option value="5">Test5</option>
+                            <option value="6">Test6</option>
+                            <option value="7">Test7</option>
+                        </select>
+
+                        <label for="myTA">Textarea:</label>
+                        <textarea name="myTextA" id="myTA" cols="20" rows="4"></textarea>
+
+                        <label for="myFile">Upload a file:</label>
+                        <input type="file" name="myFile" id="myFile">
+                    </div>
+                </div>
+
+                <div class="form buttons">
+                    <input type="reset" name="resetBtn" id="resetBtn" value="Reset Form">
+                    <input type="submit" name="submitBtn" id="submitBtn" value="Submit Form">
+                </div>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3 class="sectionHeader">Multimedia</h3>
+            <img src="image/image 1.jpg" alt="Professional photo of Muhammed Drammeh" width="85%">
+
+            <audio controls>
+                <source src="multimedia/sound1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <video controls width="98%">
+                <source src="multimedia/video2.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+
+    <footer class="site-footer" style="text-align: center; padding: 20px; font-size: 14px;">
+        <p>© 2025 Muhammed Drammeh</p>
+    </footer>
+</body>
+
+</html>

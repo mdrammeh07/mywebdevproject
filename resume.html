@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Drammeh's Resume</title>
+    <link rel="stylesheet" href="Master.css">
+</head>
+
+<body>
+    <main>
+        <div id="milliseconds">0</div>
+
+        <script>
+            let startTimeValue;
+
+            function startTimer() {
+                startTimeValue = Date.now();
+                setInterval(updateTimer, 1);
+            }
+
+            function updateTimer() {
+                const currentTime = Date.now();
+                const milliseconds = currentTime - startTimeValue;
+                document.getElementById("milliseconds").textContent = milliseconds;
+            }
+
+            startTimer();
+
+            console.log('Script is running');
+        </script>
+
+        <nav>
+            <ul style="list-style: none; display: flex; gap: 15px;">
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="cover_letter.html">Cover Letter</a></li>
+                <li><a href="career_goals.html">Career Goals</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1 class="title">Muhammed Drammeh</h1>
+            <p>Everett, WA | +1(470) 331-9539 |
+                <a href="https://www.linkedin.com/in/muhammed-drammeh/" target="_blank">LinkedIn</a>
+            </p>
+            <hr>
+        </header>
+
+        <!-- Only ONE date div here -->
+        <div id="currentDate">Loading date...</div>
+
+        <article>
+            <section class="Summary">
+                <h1 class="sectionHeader">Summary</h1>
+                <p>
+                    <span style="background-color:none;">Motivated and detail-oriented Cybersecurity and Computer
+                        Science student with hands-on experience<br>
+                        supporting cyber test environments, vulnerability analysis, and avionics systems. Strong
+                        knowledge of security frameworks (CVSS, CVE, NVD), software development, and aircraft
+                        networking.
+                        Adept at supporting cross-functional teams to align cybersecurity testing objectives and
+                        procedures. Known for clear documentation, proactive risk assessment, and technical versatility
+                        across scripting, Linux systems, and cloud environments.</span>
+                </p>
+                <hr>
+
+                <h1 class="sectionHeader">Core Skills</h1>
+                <ul>
+                    <li>Cybersecurity Testing & Evaluation</li>
+                    <li>Vulnerability & Risk Management (CVSS, CVE, NVD)</li>
+                    <li>Avionics Systems & Aircraft Networking</li>
+                    <li>Software Development (HTML, CSS, C++, Java, Python)</li>
+                    <li>Security Tools: Kali Linux, Splunk, SIEM, IDS/IPS, EDR</li>
+                    <li>Cloud Platforms: AWS</li>
+                    <li>Incident Response & Documentation</li>
+                    <li>Scripting & Automation (Python, Bash, Perl, Ruby)</li>
+                    <li>Operating Systems: Unix/Linux/Windows</li>
+                    <li>Test Planning & Reporting</li>
+                </ul>
+            </section>
+            <hr>
+        </article>
+
+        <section class="experience">
+            <h2 class="sectionHeader">Experience</h2>
+
+            <div class="job">
+                <p class="employerName"><b>Accenture</b> – Seattle, WA | June 2022 – August 2023</p>
+                <h3 class="positionTitle">Cybersecurity Intern</h3>
+                <ul>
+                    <li>Assisted in vulnerability assessment and penetration testing activities.</li>
+                    <li>Monitored SIEM dashboards and created security reports.</li>
+                    <li>Contributed to documentation and policy improvements.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <p class="employerName"><b>Live Parallel</b> – Atlanta, GA | July 2020 – Feb 2022</p>
+                <h3 class="positionTitle">Information Security Analyst</h3>
+                <ul>
+                    <li>Analyzed threat feeds and network anomalies.</li>
+                    <li>Implemented security solutions with cross-functional teams.</li>
+                    <li>Maintained ISO 27001 audit documentation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h3 class="sectionHeader">Education</h3>
+            <ul>
+                <li><strong>Mountain Education Charter High</strong> – High School Diploma, 2018</li>
+                <li><strong>Atlanta Metropolitan State College</strong> – A.S. in Computer Information Systems, 2024
+                </li>
+                <li><strong>Western Governors University</strong> – B.S. in Computer Science, Expected 2028</li>
+            </ul>
+        </section>
+
+        </section>
+
+        <section class="skills">
+            <h3 class="sectionHeader"> Skills </h3>
+            <ul id="skillslist">
+                <li><strong>Programming:</strong> Python, Java, HTML, CSS</li>
+                <li><strong>Security Tools:</strong> SIEM, Splunk, EDR, Antivirus</li>
+                <li><strong>Networking:</strong> SQL, VPN, IDS/IPS, Firewalls</li>
+                <li><strong>Professional Development:</strong> Year Up Program</li>
+            </ul>
+        </section>
+
+        <section class="certifications">
+            <h3 class="sectionHeader">Certifications</h3>
+            <ul>
+                <li>CompTIA Security+</li>
+                <li>Certified Ethical Hacker (CEH)</li>
+                <li>Certified Information Systems Security Professional (CISSP)</li>
+                <li>CompTIA Network+</li>
+            </ul>
+            <hr>
+
+            <!-- Moved Tables section inside main -->
+            <section class="tables">
+                <h3 class="sectionHeader">Tables</h3>
+                <table>
+                    <caption>
+                        <em>I am very passionate about Cybersecurity and writing code using coding languages like HTML,
+                            Java, Python, CSS, and JavaScript.</em>
+                    </caption>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                    </tr>
+                    <tr>
+                        <td>CompTIA Security+</td>
+                        <td>Certified Ethical Hacker</td>
+                        <td>Certified Information Systems Security Professional</td>
+                        <td>CompTIA Network+</td>
+                    </tr>
+                    <tr>
+                        <td><span>Gambia,</span> West Africa</td>
+                        <td>Senegal, West Africa</td>
+                        <td>Kenya, East Africa</td>
+                        <td>Ethiopia, East Africa</td>
+                    </tr>
+                    <tr>
+                        <td>Berlin, Germany</td>
+                        <td>London, England</td>
+                        <td>Stockholm, Sweden</td>
+                        <td>Zurich, Switzerland</td>
+                    </tr>
+                </table>
+            </section>
+
+            <footer style="text-align: center; padding: 20px; font-size: 14px;">
+                <p>© 2025 Muhammed Drammeh |
+                    <a href="mailto:muhammed.drammeh97@aol.com">muhammed.drammeh97@aol.com</a>
+                </p>
+            </footer>
+    </main>
+
+    <!-- Bottom script for date (correct place) -->
+    <script>
+        const dateDiv = document.getElementById('currentDate');
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const formattedDate = today.toLocaleDateString(undefined, options);
+
+        console.log("Today's date is:", formattedDate);
+
+        dateDiv.textContent = formattedDate;
+    </script>
+
+</body>
+
+</html>
+<!-- End of HTML document -->
